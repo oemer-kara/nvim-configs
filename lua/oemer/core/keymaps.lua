@@ -30,10 +30,10 @@ map("n", "<Leader>se", "<C-w>=", vim.tbl_extend("force", opts, { desc = "Equaliz
 map("n", "<Leader>sx", ":close<CR>", vim.tbl_extend("force", opts, { desc = "Close Current Split" }))
 
 -- Navigate Between Windows
-map("n", "<C-w>h", "<C-w>h", vim.tbl_extend("force", opts, { desc = "Move to Left Window" }))
-map("n", "<C-w>j", "<C-w>j", vim.tbl_extend("force", opts, { desc = "Move to Bottom Window" }))
-map("n", "<C-w>k", "<C-w>k", vim.tbl_extend("force", opts, { desc = "Move to Top Window" }))
-map("n", "<C-w>l", "<C-w>l", vim.tbl_extend("force", opts, { desc = "Move to Right Window" }))
+map("n", "<C-h>", "<C-w>h", vim.tbl_extend("force", opts, { desc = "Move to Left Window" }))
+map("n", "<C-j>", "<C-w>j", vim.tbl_extend("force", opts, { desc = "Move to Bottom Window" }))
+map("n", "<C-k>", "<C-w>k", vim.tbl_extend("force", opts, { desc = "Move to Top Window" }))
+map("n", "<C-l>", "<C-w>l", vim.tbl_extend("force", opts, { desc = "Move to Right Window" }))
 
 -- Buffer Management
 map("n", "<Leader>bx", ":bd<CR>", vim.tbl_extend("force", opts, { desc = "Close Buffer" }))

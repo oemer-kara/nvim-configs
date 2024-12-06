@@ -3,6 +3,11 @@ return {
 	requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	config = function()
 		-- Lualine setup
+		--
+		local function clock()
+			return os.date("%A, %H:%M")
+		end
+
 		require("lualine").setup({
 			options = {
 				theme = "onedark", -- Use the 'onedark' theme for consistency
@@ -21,7 +26,7 @@ return {
 				lualine_c = { { "filename", path = 1 } }, -- Show full file path
 				lualine_x = { "encoding", "fileformat", "filetype" },
 				lualine_y = { "progress" },
-				lualine_z = { "location" },
+				lualine_z = { "location", clock },
 			},
 			inactive_sections = {
 				lualine_a = {},
