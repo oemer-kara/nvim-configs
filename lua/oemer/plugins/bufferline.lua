@@ -72,5 +72,41 @@ return {
 			":BufferLineCloseOthers<CR>",
 			{ noremap = true, silent = true, desc = "Close Other Buffers" }
 		)
+		map(
+			"n",
+			"<leader>b1",
+			":BufferLineGoToBuffer 1<CR>",
+			{ noremap = true, silent = true, desc = "Go to Buffer 1" }
+		)
+		map(
+			"n",
+			"<leader>b2",
+			":BufferLineGoToBuffer 2<CR>",
+			{ noremap = true, silent = true, desc = "Go to Buffer 2" }
+		)
+		map(
+			"n",
+			"<leader>b3",
+			":BufferLineGoToBuffer 3<CR>",
+			{ noremap = true, silent = true, desc = "Go to Buffer 3" }
+		)
+		map(
+			"n",
+			"<leader>b4",
+			":BufferLineGoToBuffer 4<CR>",
+			{ noremap = true, silent = true, desc = "Go to Buffer 4" }
+		)
+		map(
+			"n",
+			"<leader>b5",
+			":BufferLineGoToBuffer 5<CR>",
+			{ noremap = true, silent = true, desc = "Go to Buffer 5" }
+		)
+		map(
+			"n",
+			"<leader>b6",
+			":BufferLineGoToBuffer 6<CR>",
+			{ noremap = true, silent = true, desc = "Go to Buffer 6" }
+		)
 	end,
 }

@@ -30,10 +30,10 @@ map("n", "<Leader>se", "<C-w>=", vim.tbl_extend("force", opts, { desc = "Equaliz
 map("n", "<Leader>sx", ":close<CR>", vim.tbl_extend("force", opts, { desc = "Close Current Split" }))
 
 -- Navigate Between Windows
-vim.keymap.set("n", "<C-w>h", "<C-w>h", vim.tbl_extend("force", opts, { desc = "Move to Left Window" }))
-vim.keymap.set("n", "<C-w>j", "<C-w>j", vim.tbl_extend("force", opts, { desc = "Move to Bottom Window" }))
-vim.keymap.set("n", "<C-w>k", "<C-w>k", vim.tbl_extend("force", opts, { desc = "Move to Top Window" }))
-vim.keymap.set("n", "<C-w>l", "<C-w>l", vim.tbl_extend("force", opts, { desc = "Move to Right Window" }))
+map("n", "<C-w>h", "<C-w>h", vim.tbl_extend("force", opts, { desc = "Move to Left Window" }))
+map("n", "<C-w>j", "<C-w>j", vim.tbl_extend("force", opts, { desc = "Move to Bottom Window" }))
+map("n", "<C-w>k", "<C-w>k", vim.tbl_extend("force", opts, { desc = "Move to Top Window" }))
+map("n", "<C-w>l", "<C-w>l", vim.tbl_extend("force", opts, { desc = "Move to Right Window" }))
 
 -- Buffer Management
 map("n", "<Leader>bx", ":bd<CR>", vim.tbl_extend("force", opts, { desc = "Close Buffer" }))
@@ -48,5 +48,9 @@ map("n", "<C-Right>", ":vertical resize -4<CR>", vim.tbl_extend("force", opts, {
 map("n", "<C-Left>", ":vertical resize +4<CR>", vim.tbl_extend("force", opts, { desc = "Increase Window Width" }))
 
 -- Useful Keybinds
-vim.api.nvim_set_keymap("i", "JJ", "<Esc>", vim.tbl_extend("force", opts, { desc = "Escape Alternative (JJ)" }))
-vim.api.nvim_set_keymap("i", "jj", "<Esc>", vim.tbl_extend("force", opts, { desc = "Escape Alternative (jj)" }))
+map("v", "J", ":m '>+1<CR>gv=gv")
+map("v", "K", ":m '<-2<CR>gv=gv")
+map("i", "JJ", "<Esc>", vim.tbl_extend("force", opts, { desc = "Escape Alternative (JJ)" }))
+map("i", "jj", "<Esc>", vim.tbl_extend("force", opts, { desc = "Escape Alternative (jj)" }))
+map("v", "<", "<gv")
+map("v", ">", ">gv")
